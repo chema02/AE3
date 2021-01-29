@@ -1,0 +1,12 @@
+{
+  "name": "PantalasPlaceMyBet",
+  "displayName": "PantalasPlaceMyBet",
+  "expo": {
+    "name": "PantalasPlaceMyBet",
+    "slug": "PantalasPlaceMyBet",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
