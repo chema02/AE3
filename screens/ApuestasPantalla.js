@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import {
-    SafeAreaView,
+    
     StyleSheet,
-    ScrollView,
+   
     View,
     Text,
     StatusBar,
@@ -16,8 +16,8 @@ import {ApuestasComponent} from '../components/ApuestasComponent'
             <>
             <StatusBar barStyle="dark-content" />
             <View style={styles.body}>
-            <Text style={{color:'red'}}>Home Pantalla</Text>
-            <Text style={{color:'black'}} >Pantalla Home</Text>
+            <Text style={{color:'red'}}>Apuestas Pantalla</Text>
+            <Text style={{color:'black'}} >Pantalla Apuestas</Text>
             <ApuestasComponent/>
             </View>
             </>

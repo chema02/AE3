@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import {
-    SafeAreaView,
+    
     StyleSheet,
-    ScrollView,
+  
     View,
     Text,
     StatusBar,
@@ -26,6 +26,7 @@ import {Card} from 'react-native-elements';
                     <Text style={{marginBottom: 10}}>
         
                     </Text>
+                       
                         <Button
                             style={styles.seccio1}
                             icon={<Icon name='code' color='#ffffff' />}
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
       },
       seccio2: {
         flex:1,
-        borderColor:'green',
+        
         borderWidth:3,
         fontSize: 12,
         fontWeight: '600',
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
  
       seccio3: {
         flex:1,
-        borderColor:'blue',
+      
         borderWidth:3,
         fontSize: 12,
         fontWeight: '600',

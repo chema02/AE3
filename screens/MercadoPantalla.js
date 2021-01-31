@@ -1,14 +1,14 @@
 import React,{Component} from 'react';
 import {
-    SafeAreaView,
+    
     StyleSheet,
-    ScrollView,
+
     View,
     Text,
     StatusBar,
 } from 'react-native';
 
-import {HomeComponent} from '../components/HomeComponent'
+import {MercadoComponent} from '../components/MercadoComponent'
 
  export default class MercadoPantalla extends Component{
     render(){
@@ -16,9 +16,9 @@ import {HomeComponent} from '../components/HomeComponent'
             <>
             <StatusBar barStyle="dark-content" />
             <View style={styles.body}>
-            <Text style={{color:'red'}}>Home Pantalla</Text>
-            <Text style={{color:'black'}} >Pantalla Home</Text>
-            <HomeComponent/>
+            <Text style={{color:'red'}}>Mercado Pantalla</Text>
+            <Text style={{color:'black'}} >Pantalla Mercado</Text>
+            <MercadoComponent/>
             </View>
             </>
             );
