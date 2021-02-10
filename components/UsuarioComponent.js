@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {
   
     StyleSheet,
- 
+    TextInput,
     View,
     Text,
     StatusBar,
@@ -10,52 +10,36 @@ import {
     Icon,
 } from 'react-native';
 
-import {Card} from 'react-native-elements';
+import {Card, Input} from 'react-native-elements';
 
 
  export class UsuarioComponent extends Component{
+     constructor(props){
+         super(props);
+         this.state={
+             nombre:'',
+             apellidos: 'morales',
+             edad: 46,
+         }
+     }
+     guardanombre=(elnombre)=>{
+         this.setState({nombre:elnombre})
+     }
     render(){
         return (
-            <>
-            <StatusBar barStyle="dark-content" /> 
+            
             <View style={styles.contenidor}  >
-            <Card>
-                <Card.Title>Usuarios</Card.Title>
-                    <Card.Divider/>
-  
-                    <Text style={{marginBottom: 10}}>
-        
-                    </Text>
-                        <Button
-                            style={styles.seccio1}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Usuarios" />
-
-                        <Button
-                            style={styles.seccio2}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Apuestas" />
-
-                        <Button
-                            style={styles.seccio3}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Mercados" />
-
-                        <Button
-                            style={styles.seccio4}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Eventos" />
-
-                            
-  
-            </Card>
+                
+                    <TextInput
+                        placeholder='introduce tú nombre'
+                        onChangeText={this.guardanombre}
+                        >
+                    </TextInput>
+                    <Button title='holaaaa'></Button>
+            
 
             </View>
-            </>
+            
             );
     }
 }
@@ -65,8 +49,6 @@ const styles = StyleSheet.create({
     contenidor: {
         flex: 1,
         flexDirection: 'column',
-
-        borderWidth:5,
       },
       seccio1: {
         flex: 1,

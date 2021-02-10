@@ -16,8 +16,7 @@ import {Card} from 'react-native-elements';
  export class HomeComponent extends Component{
     render(){
         return (
-            <>
-            <StatusBar barStyle="dark-content" /> 
+            
             <View style={styles.contenidor}  >
             <Card>
                 <Card.Title>Place My Bet</Card.Title>
@@ -56,7 +55,7 @@ import {Card} from 'react-native-elements';
             </Card>
 
             </View>
-            </>
+            
             );
     }
 }
