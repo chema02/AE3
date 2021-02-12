@@ -1,30 +1,24 @@
 import React,{Component} from 'react';
 import {
-   
     StyleSheet,
-    
     View,
     Text,
-   
 } from 'react-native';
 
-
-import { Card, ListItem, Button, Icon } from 'react-native-elements'
-
- export default class EventoPantalla extends Component{
+ export class EventoComponent extends Component{
+     constructor(props){
+         super(props)
+     }
     render(){
         return (
-            <>
-            
             <View style={styles.body}>
-                
-                
-
+                <View>
+                    <Text>{this.props.elementoMostrar.item.partido}</Text>
+                </View>
             </View>
-            </>
             );
     }
-};
+}
 
 const styles = StyleSheet.create({
 

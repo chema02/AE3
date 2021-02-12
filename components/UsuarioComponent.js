@@ -1,16 +1,13 @@
 import React,{Component} from 'react';
 import {
-  
+    
     StyleSheet,
-    TextInput,
     View,
     Text,
     StatusBar,
-    Button,
-    Icon,
 } from 'react-native';
 
-import {Card, Input} from 'react-native-elements';
+import { Input,Button,Icon} from 'react-native-elements';
 
 
  export class UsuarioComponent extends Component{
@@ -18,28 +15,32 @@ import {Card, Input} from 'react-native-elements';
          super(props);
          this.state={
              nombre:'',
-             apellidos: 'morales',
-             edad: 46,
+             apellidos: '',
+             edad: '',
          }
      }
-     guardanombre=(elnombre)=>{
+     guardaNombre=(elnombre)=>{
          this.setState({nombre:elnombre})
+         console.log(elnombre)
+     }
+     guardaApellido=(elapellido)=>{
+         this.setState({apellidos:elapellido})
+         console.log(elapellido)
+     }
+     guardaEdad=(laedad)=>{
+         this.setState({edad:laedad})
+         console.log(laedad)
      }
     render(){
+
         return (
             
-            <View style={styles.contenidor}  >
-                
-                    <TextInput
-                        placeholder='introduce tú nombre'
-                        onChangeText={this.guardanombre}
-                        >
-                    </TextInput>
-                    <Button title='holaaaa'></Button>
-            
-
+            <View>
+                    <Input placeholder='Introduce nombre' onChangeText={this.guardaNombre}></Input>
+                    <Input placeholder='Introduce tú apellido' onChangeText={this.guardaApellido} ></Input>
+                    <Input placeholder='Introduce tú edad' onChangeText={this.guardaEdad} ></Input>
+                    <Button title='Siguiente'></Button>
             </View>
-            
             );
     }
 }

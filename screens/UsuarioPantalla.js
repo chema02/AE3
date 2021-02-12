@@ -20,17 +20,11 @@ import {HomeComponent} from '../components/HomeComponent';
             <View style={styles.body}>
                 <Text style={{color:'red'}}>Usuaria Pantalla</Text>
                 <Text style={{color:'black'}} >Pantalla Usuario</Text>
-               
-              <Text>hola</Text>
+                <UsuarioComponent/>
+             
               <View style={styles.contenidor}  >
+
                 
-                <TextInput
-                    placeholder='introduce tú nombre'
-                    onChangeText={this.guardanombre}
-                    >
-                </TextInput>
-                <Button title='holaaaa'></Button>
-        
 
         </View>
 

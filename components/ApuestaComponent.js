@@ -4,58 +4,51 @@ import {
     StyleSheet,
     
     View,
-    Text,
-    StatusBar,
-    Button,
-    Icon,
+
 } from 'react-native';
 
-import {Card} from 'react-native-elements';
+import {Input,Button} from 'react-native-elements';
 
 
  export class ApuestaComponent extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            equipolocal:'',
+            equipovisitante: '',
+            tipoapuesta:'',
+            dineroapostado:'',
+            
+        }
+    }
+  
+  guardaLocal=(local)=>{
+      this.setState({equipolocal:local})
+      console.log(local)
+  }
+  guardaVisitante=(visitante)=>{
+      this.setState({equipovisitante:visitante})
+      console.log(visitante)
+  }
+  guardaApuesta=(apuesta)=>{
+      this.setState({tipoapuesta:apuesta})
+      console.log(apuesta)
+  }
+  guardaDinero=(dinero)=>{
+    this.setState({dineroapostado:dinero})
+    console.log(dinero)
+}
     render(){
         return (
-            <>
-            <StatusBar barStyle="dark-content" /> 
-            <View style={styles.contenidor}  >
-            <Card>
-                <Card.Title>Place My Bet</Card.Title>
-                    <Card.Divider/>
-  
-                    <Text style={{marginBottom: 10}}>
-        
-                    </Text>
-                        <Button
-                            style={styles.seccio1}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Usuarios" />
-
-                        <Button
-                            style={styles.seccio2}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Apuestas" />
-
-                        <Button
-                            style={styles.seccio3}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Mercados" />
-
-                        <Button
-                            style={styles.seccio4}
-                            icon={<Icon name='code' color='#ffffff' />}
-                            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Eventos" />
-
-                            
-  
-            </Card>
-
+            
+            <View>
+                    <Input placeholder='Introduce equipo local' onChangeText={this.guardaLocal}></Input>
+                    <Input placeholder='Introduce equipo visitante' onChangeText={this.guardaVisitante} ></Input>
+                    <Input placeholder='Introduce tipo de apuesta over/under' onChangeText={this.guardaApuesta} ></Input>
+                    <Input placeholder='Introduce dinero apostado' onChangeText={this.guardaDinero} ></Input>
+                    <Button title='Siguiente'></Button>
             </View>
-            </>
+            
             );
     }
 }

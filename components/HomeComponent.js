@@ -6,11 +6,10 @@ import {
     View,
     Text,
     StatusBar,
-    Button,
-    Icon,
+
 } from 'react-native';
 
-import {Card} from 'react-native-elements';
+import {Card,Button,Icon} from 'react-native-elements';
 
 
  export class HomeComponent extends Component{
