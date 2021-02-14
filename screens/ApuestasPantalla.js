@@ -1,8 +1,6 @@
 import React,{Component} from 'react';
 import {
-    
     StyleSheet,
-   
     View,
     Text,
     StatusBar,
@@ -14,22 +12,28 @@ import {ApuestaComponent} from '../components/ApuestaComponent'
     render(){
         return (
             <View>
-            <StatusBar barStyle="dark-content" />
-            <View style={styles.body}>
-            <Text style={{color:'red'}}>Apuestas Pantalla</Text>
-            <Text style={{color:'black'}} >Pantalla Apuestas</Text>
-            <ApuestaComponent/>
-            </View>
+                <StatusBar barStyle="dark-content" />
+                    <View style={styles.body}>
+                        <Text style={styles.seccionTitulo} >Pantalla Apuestas</Text>
+                        <ApuestaComponent/>
+                    </View>
             </View>
             );
     }
-};
+}
 
 const styles = StyleSheet.create({
 
     body: {
         backgroundColor : 'white',
     },
-        
+    seccionTitulo:{
+        fontSize:24,
+        fontWeight:'300',
+        color:'black',
+        textAlign:'center',
+        marginTop:12,
+        marginBottom:10,
+    },     
     
 });

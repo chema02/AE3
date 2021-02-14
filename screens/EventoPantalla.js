@@ -26,10 +26,10 @@ import {EventoComponent} from '../components/EventoComponent'
         return (
         <View>
             <StatusBar barStyle="dark-content" />
-            <View style={styles.body}>
-                <View style={styles.seccionContainer}>
-                    <Text style={styles.seccionTitulo}>Evento Pantalla</Text>
-                </View>
+                <View style={styles.body}>
+                    <View style={styles.seccionContainer}>
+                        <Text style={styles.seccionTitulo}>Evento Pantalla</Text>
+                    </View>
                 <View style={{height:300}}>
                     <FlatList
                         data={this.state.mostrarDatos}

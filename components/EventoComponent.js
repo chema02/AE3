@@ -13,7 +13,7 @@ import {
         return (
             <View style={styles.body}>
                 <View>
-                    <Text>{this.props.elementoMostrar.item.partido}</Text>
+                    <Text style={{color:'green', fontSize:20,fontWeight:'bold',margin:5}}>{this.props.elementoMostrar.item.partido}</Text>
                 </View>
             </View>
             );

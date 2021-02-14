@@ -1,16 +1,11 @@
 import React,{Component} from 'react';
 import {
-    
     StyleSheet,
-  
     View,
     Text,
-    StatusBar,
-
 } from 'react-native';
 
 import {Card,Button,Icon} from 'react-native-elements';
-
 
  export class HomeComponent extends Component{
     render(){
@@ -47,9 +42,7 @@ import {Card,Button,Icon} from 'react-native-elements';
                             style={styles.seccio4}
                             icon={<Icon name='code' color='#ffffff' />}
                             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 5}}
-                            title="Eventos" />
-
-                            
+                            title="Eventos" />        
   
             </Card>
 

@@ -1,10 +1,7 @@
 import React,{Component} from 'react';
 import {
-  
     StyleSheet,
-    
     View,
-
 } from 'react-native';
 
 import {Input,Button} from 'react-native-elements';
@@ -58,39 +55,7 @@ const styles = StyleSheet.create({
     contenidor: {
         flex: 1,
         flexDirection: 'column',
-
         borderWidth:5,
-      },
-      seccio1: {
-        flex: 1,
-        borderColor:'red',
-        borderWidth:3,
-        fontSize: 12,
-        fontWeight: '600',
-        margin: 4,
-        padding: 12,
-        textAlign: 'right',
-      },
-      seccio2: {
-        flex:1,
-        borderColor:'green',
-        borderWidth:3,
-        fontSize: 12,
-        fontWeight: '600',
-        margin: 4,
-        padding: 12,
-        textAlign: 'center',
-      }, 
- 
-      seccio3: {
-        flex:1,
-        borderColor:'blue',
-        borderWidth:3,
-        fontSize: 12,
-        fontWeight: '600',
-        margin: 4,
-        padding: 12,
-        textAlign: 'left',
       },
         
 

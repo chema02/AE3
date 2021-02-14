@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import {
-    
     StyleSheet,
     FlatList,
     View,
@@ -40,7 +39,7 @@ import {SeparadorLista} from '../components/SeparadorLista'
                         ItemSeparatorComponent={()=>(<SeparadorLista/>)}
                     />
            
-                    </View>
+                </View>
                 </View>
             </View>
             );

@@ -3,13 +3,7 @@ import {
     StyleSheet,
     View,
     Text,
-    StatusBar,
-    Button,
-    Icon,
-    SafeAreaView,
-    FlatList,
     Pressable,
-    ScrollView,
 } from 'react-native';
 
 import {Badge} from 'react-native-elements';
